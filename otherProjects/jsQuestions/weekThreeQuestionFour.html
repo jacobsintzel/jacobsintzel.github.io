@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Your Own Times Tables</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //empty array that will hold calculate variables results
+        var answer = [];
+        //variable with value of true so the while loop will run
+        var loop = true;
+        /*function that will ask the user questions and calculate answer based off responses*/
+        var viewTimesTables = function () {
+            /*while loop that will ask 3 separate questions using prompts and uses if statements to ensure the user enters a number, not -1 or a letter*/
+            while (loop) {
+                var questionOne = Number(prompt("Enter number you wish to view times table of"));
+                if (Number.isNaN(questionOne)) {
+                    window.alert("enter a valid number.");
+                    break;
+                }
+                loop = false;
+                if (questionOne === -1) {
+                    window.alert("-1 is not a valid number.");
+                    break;
+                }
+                loop = false;
+                var questionTwo = Number(prompt("Enter starting value for multiplication table "));
+                if (Number.isNaN(questionTwo)) {
+                    window.alert("enter a valid number");
+                    break;
+                }
+                loop = false;
+                if (questionTwo === -1) {
+                    window.alert("-1 is not a valid number");
+                    break;
+                }
+                loop = false;
+                var questionThree = Number(prompt("Enter end value of multiplication table "));
+                if (Number.isNaN(questionThree)) {
+                    window.alert("enter a valid number");
+                    break;
+                }
+                loop = false;
+                if (questionThree === -1) {
+                    window.alert("-1 is not a valid number");
+                    break;
+                }
+                loop = false;
+            }
+            /*for loop that will start at the answer for questionTwo prompt and will end when it is less than or equal to questionThree response. The loop will increase by 1 each time. The answers are pushed to the answer array at the top*/
+            for (var forLoop = questionTwo; forLoop <= questionThree; forLoop++) {
+                var calculate = forLoop * questionOne;
+                answer.push(calculate);
+            }
+        };
+        /*function call and again could improve by displaying the actual multiplication instead of just the results*/
+        var initiate = viewTimesTables();
+        document.write('The answers for your range of times tables: </br>' + answer);
+    </script>
+
+</body>
+
+</html>
