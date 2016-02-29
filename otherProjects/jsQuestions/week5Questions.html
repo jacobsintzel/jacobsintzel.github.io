@@ -33,7 +33,18 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 1 function
+                      function doQuestion1() {
+                          var str = "";
+                          for (var i = 1; i <= 6; i++) {
+                              for (var j = 1; j <= i; j++) {
+                                  str = str + "#"
+                              };
+                              str = str + "<br>"
+                          };
+                          $('#answer1').html(str);
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -51,7 +62,35 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 2 function
+                      function doQuestion2() {
+                          var numerals = "";
+                          //for loop that starts at 1 and ends when greater than 100.
+                          for (var number = 1; number <= 100; number++) {
+                              if (number % 3 === 0 || number % 5 === 0) {
+                                  for (var numberInList = number; numberInList <= number; numberInList++) {
+                                      if (numberInList % 3 === 0 && numberInList % 5 !== 0) {
+                                          numberInList = "Foo";
+                                          numerals += numberInList;
+                                          numerals += "<br>";
+                                      } else if (numberInList % 5 === 0 && numberInList % 3 !== 0) {
+                                          numberInList = "Bar";
+                                          numerals += numberInList;
+                                          numerals += "<br>";
+                                      } else if (numberInList % 5 === 0 || numberInList % 3 === 0) {
+                                          numberInList = "Foobar";
+                                          numerals += numberInList;
+                                          numerals += "<br>";
+                                      }
+                                  }
+                              } else {
+                                  numerals += number;
+                                  numerals += "<br>";
+                              }
+                              $('#answer2').html(numerals);
+                          }
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -69,7 +108,34 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 3 function
+                      function doQuestion3() {
+                          var grid = "";
+                          var newLine = 1;
+                          var ask = Number(prompt("Enter a number for the side length for your grid"));
+                          var secondCondition = true;
+                          /*this loop tracks the loop number for the entire program.
+                          Makes the loop continue the number of times
+                          the person put into the prompt*/
+                          for (var thirdCondition = 1; thirdCondition <= ask; thirdCondition++) {
+                              /*this while loop stops when newLine is no longer less than ask variable's value.
+                              Goes up by a rate of 1 each time. It determines the amount of breaks after each row*/
+                              while (newLine <= ask) {
+                                  newLine++;
+                                  //changed the increment to 2 in this for loop because the spaces are part of the grid
+                                  for (var loopCondition = 1; loopCondition <= ask; loopCondition += 2) {
+                                      //this do while loop inserts the "# " into each row. It stops when the loopCondition isnt true anymore
+                                      do {
+                                          grid += "# ";
+                                      } while (secondCondition = false);
+                                  }
+                                  grid += "<br>";
+                              }
+                          }
+
+                          $("#answer3").html(grid);
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -87,7 +153,27 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 4 function
+                      function countBs(word) {
+                          //empty string that will hold the answers
+                          var emptyString = "";
+                          /*for loop that starts at zero or the first letter in the
+                          string and stops when it is longer than the word*/
+                          for (var count = 0; count <= word.length; count++) {
+                              var answer2 = word.charAt(count);
+                              /*if statement that will skip to next letter in loop if it isnt equal to B
+                              or will add it to the empty variable q if it is*/
+                              if (answer2 !== "B") {
+                                  continue;
+                              } else {
+                                  /*This will write the length of the empty variable
+                                  emptyString out to the target element #answer4*/
+                                  emptyString += answer2;
+                                  $("#answer4").html("The number of B's in this word: " + emptyString.length);
+                              }
+                          }
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -105,7 +191,26 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 5 function
+                      //created a function that has two parameters
+                      function countChar(word, letter) {
+                          //an empty string that will take the letter of answer2
+                          var emptyString = "";
+                          /*for statement that starts at 0 and stops when it is longer than the word's length*/
+                          for (var count = 0; count <=word.length; count++) {
+                              /*the letter that the iterator count is on will be put into the answer2 if
+                              its equal to the letter they put in as an argument. If it is not, it will skip
+                              and test the next letter in the word*/
+                              var answer2 = word.charAt(count);
+                              if (answer2 !== letter) {
+                                  continue;
+                              } else {
+                                  emptyString += answer2;
+                                  $("#answer5").html("The number of " + letter + "'s in this word: " + emptyString.length);
+                              }
+                          }
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -119,12 +224,24 @@
                 </div>
             </div>
 
-              <!-- Tab pane 6 -->
+            <!-- Tab pane 6 -->
             <div role="tabpanel" class="tab-pane" id="q6">
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 6 function
+                          function range(start, end){
+
+                          var arr=[];
+                          if(start<=end){
+
+                              for(start; start<=end; start++){
+                              arr.push(start);
+                              }
+                          }
+                              return arr; /*returning contents arr to the rangeAnswer function call */
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -143,7 +260,27 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 7 function
+                  //function called sum has two parameters to define range
+                          function sum(start, end){
+                  //this array will hold the range of numbers
+                          var emptyArray=[];
+                  //this variable will hold sum of the range
+                          var total= 0;
+                          if(start<=end){
+                      //for loop for determining range
+                              for(start; start<=end; start++){
+                              emptyArray.push(start);
+                              }
+                          }
+                      /*for loop for determining sum of range. Made i< not i<= because first character in array
+                       is 0 but the length of array starts at 1*/
+                              for(var figure=0; figure<emptyArray.length; figure++){
+                              total+=emptyArray[figure];
+                              }
+                              return total;
+                          };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -162,7 +299,19 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 8
+                      function reverseArray(array){
+                      //empty array where letters go in reverse order
+                      var newArray=[];
+                      //loop that starts at last letter & ends at first
+                      for(var reverse=[array.length-1]; reverse>=0; reverse--){
+                      //pushes argument array to newArray
+                      newArray.push(array[reverse]);
+                      };
+                      //returns newArray to reversedArray
+                      return newArray;
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -181,7 +330,24 @@
                 <div class="row">
                     <!--row for pre-->
                     <div class="col-md-12">
-                    <pre>
+                        <pre>
+                      //question 9
+                      function reverseArrayInPlace(array){
+                      var variable1=0;
+                      var variable2=1;
+                  /*tried to make variable1 start at the beginning and variable2 start from the end of the array
+                  and end once they reached the 3 in the array*/
+                      do{
+                      /*The 4 and 2 switch. Only when I remove these variables will the 1 and 5 switch places.
+                      Don't know how to make this work*/
+                      variable1++;
+                      variable2++;
+                      var swap=array[variable1];
+                      array[variable1]=array[array.length-variable2];
+                      array[array.length-variable2]=swap;
+                      }while(variable1<2&&variable2>2);
+                      return array;
+                      };
                     </pre>
                     </div>
                     <!--row for button-->
@@ -194,8 +360,10 @@
                     </div>
                 </div>
             </div>
-        </div><!--div for tab panes-->
-    </div><!--div for container-->
+        </div>
+        <!--div for tab panes-->
+    </div>
+    <!--div for container-->
 
     <script>
         $(document).ready(function () {
@@ -295,7 +463,7 @@
                 //an empty string that will take the letter of answer2
                 var emptyString = "";
                 /*for statement that starts at 0 and stops when it is longer than the word's length*/
-                for (var count = 0; count <=word.length; count++) {
+                for (var count = 0; count <= word.length; count++) {
                     /*the letter that the iterator count is on will be put into the answer2 if
                     its equal to the letter they put in as an argument. If it is not, it will skip
                     and test the next letter in the word*/
@@ -309,71 +477,70 @@
                 }
             };
 
-        //question 6 function
-            function range(start, end){
+            //question 6 function
+            function range(start, end) {
 
-            var arr=[];
-            if(start<=end){
+                var arr = [];
+                if (start <= end) {
 
-                for(start; start<=end; start++){
-                arr.push(start);
+                    for (start; start <= end; start++) {
+                        arr.push(start);
+                    }
                 }
-            }
                 return arr; /*returning contents arr to the rangeAnswer function call */
-        };
+            };
 
-        //question 7 function
-    //function called sum has two parameters to define range
-            function sum(start, end){
-    //this array will hold the range of numbers
-            var emptyArray=[];
-    //this variable will hold sum of the range
-            var total= 0;
-            if(start<=end){
-        //for loop for determining range
-                for(start; start<=end; start++){
-                emptyArray.push(start);
+            //question 7 function
+            //function called sum has two parameters to define range
+            function sum(start, end) {
+                //this array will hold the range of numbers
+                var emptyArray = [];
+                //this variable will hold sum of the range
+                var total = 0;
+                if (start <= end) {
+                    //for loop for determining range
+                    for (start; start <= end; start++) {
+                        emptyArray.push(start);
+                    }
                 }
-            }
-        /*for loop for determining sum of range. Made i< not i<= because first character in array
-         is 0 but the length of array starts at 1*/
-                for(var figure=0; figure<emptyArray.length; figure++){
-                total+=emptyArray[figure];
+                /*for loop for determining sum of range. Made i< not i<= because first character in array
+                 is 0 but the length of array starts at 1*/
+                for (var figure = 0; figure < emptyArray.length; figure++) {
+                    total += emptyArray[figure];
                 }
                 return total;
             };
 
-        //question 8
-        function reverseArray(array){
-        //empty array where letters go in reverse order
-        var newArray=[];
-        //loop that starts at last letter & ends at first
-        for(var reverse=[array.length-1]; reverse>=0; reverse--){
-        //pushes argument array to newArray
-        newArray.push(array[reverse]);
-        };
-        //returns newArray to reversedArray
-        return newArray;
-        };
+            //question 8
+            function reverseArray(array) {
+                //empty array where letters go in reverse order
+                var newArray = [];
+                //loop that starts at last letter & ends at first
+                for (var reverse = [array.length - 1]; reverse >= 0; reverse--) {
+                    //pushes argument array to newArray
+                    newArray.push(array[reverse]);
+                };
+                //returns newArray to reversedArray
+                return newArray;
+            };
 
-        //question 9
-        function reverseArrayInPlace(array){
-        var variable1=0;
-        var variable2=1;
-    /*tried to make variable1 start at the beginning and variable2 start from the end of the array
-    and end once they reached the 3 in the array*/
-        do{
-        /*The 4 and 2 switch. Only when I remove these variables will the 1&5 switch places.
-        Don't know how to make this work*/
-        variable1++;
-        variable2++;
-        var swap=array[variable1];
-        array[variable1]=array[array.length-variable2];
-        array[array.length-variable2]=swap;
-        }while(variable1<2&&variable2>2);
-        return array;
-        };
-
+            //question 9
+            function reverseArrayInPlace(array) {
+                var variable1 = 0;
+                var variable2 = 1;
+                /*tried to make variable1 start at the beginning and variable2 start from the end of the array
+                and end once they reached the 3 in the array*/
+                do {
+                    /*The 4 and 2 switch. Only when I remove these variables will the 1&5 switch places.
+                    Don't know how to make this work*/
+                    variable1++;
+                    variable2++;
+                    var swap = array[variable1];
+                    array[variable1] = array[array.length - variable2];
+                    array[array.length - variable2] = swap;
+                } while (variable1 < 2 && variable2 > 2);
+                return array;
+            };
 
 
 
@@ -395,21 +562,21 @@
                 countChar("kakkerlak", "k");
             });
             $('#question6').on("click", function () {
-                var rangeAnswer=range(2,12);
-                $("#answer6").html("Your Range looks like: " + rangeAnswer.join());//displayed the array
+                var rangeAnswer = range(2, 12);
+                $("#answer6").html("Your Range looks like: " + rangeAnswer.join()); //displayed the array
             });
             $('#question7').on("click", function () {
-                var rangeSum=sum(3,7);//
+                var rangeSum = sum(3, 7); //
                 $("#answer7").html("The sum of your range: " + rangeSum);
             });
             $('#question8').on("click", function () {
-                var reversedArray=reverseArray(["A", "B", "C", "D"])
+                var reversedArray = reverseArray(["A", "B", "C", "D"])
                 $("#answer8").html("The reverse order of your array is: " + reversedArray);
             });
             $('#question9').on("click", function () {
-               var answer=reverseArrayInPlace([1, 2, 3, 4, 5])
+                var answer = reverseArrayInPlace([1, 2, 3, 4, 5])
 
-               $("#answer9").html(answer);
+                $("#answer9").html(answer);
             });
         });
     </script>
