@@ -2,366 +2,417 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Week 5 Questions</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Week 5 Questions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#q1" aria-controls="Q1" role="tab" data-toggle="tab">Q1</a></li>
-      <li role="presentation"><a href="#q2" aria-controls="Q2" role="tab" data-toggle="tab">Q2</a></li>
-      <li role="presentation"><a href="#q3" aria-controls="Q3" role="tab" data-toggle="tab">Q3</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="Q4" role="tab" data-toggle="tab">Q4</a></li>
-      <li role="presentation"><a href="#q5" aria-controls="Q5" role="tab" data-toggle="tab">Q5</a></li>
-    </ul>
+    <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#q1" aria-controls="Q1" role="tab" data-toggle="tab">Q1</a></li>
+            <li role="presentation"><a href="#q2" aria-controls="Q2" role="tab" data-toggle="tab">Q2</a></li>
+            <li role="presentation"><a href="#q3" aria-controls="Q3" role="tab" data-toggle="tab">Q3</a></li>
+            <li role="presentation"><a href="#q4" aria-controls="Q4" role="tab" data-toggle="tab">Q4</a></li>
+            <li role="presentation"><a href="#q5" aria-controls="Q5" role="tab" data-toggle="tab">Q5</a></li>
+            <li role="presentation"><a href="#q6" aria-controls="Q6" role="tab" data-toggle="tab">Q6</a></li>
+            <li role="presentation"><a href="#q7" aria-controls="Q7" role="tab" data-toggle="tab">Q7</a></li>
+            <li role="presentation"><a href="#q8" aria-controls="Q8" role="tab" data-toggle="tab">Q8</a></li>
+            <li role="presentation"><a href="#q9" aria-controls="Q9" role="tab" data-toggle="tab">Q9</a></li>
+        </ul>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Tab pane 1-->
-      <div role="tabpanel" class="tab-pane active" id="q1">
-        <div class="row">
-          <!--row for pre-->
-          <div class="col-md-12">
-            <pre>
-    //question 1 function
-    function doQuestion1(){
-    var str="";
-    for(var i=1;i<=6;i++){
-	for(var j=1;j<=i;j++){
-	   str=str + "#"
-	   };
-	   str=str + "<br>"
-    };
-        $('#answer1').html(str);
-    };
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Tab pane 1-->
+            <div role="tabpanel" class="tab-pane active" id="q1">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question1" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer1"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab pane 2-->
+            <div role="tabpanel" class="tab-pane" id="q2">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question2" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer2"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab pane 3-->
+            <div role="tabpanel" class="tab-pane" id="q3">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question3" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer3"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab pane 4 -->
+            <div role="tabpanel" class="tab-pane" id="q4">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question4" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer4"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab pane 5 -->
+            <div role="tabpanel" class="tab-pane" id="q5">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question5" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer5"></div>
+                    </div>
+                </div>
+            </div>
 
-        $('#question1').on("click", function() {
-        doQuestion1();
-    });
-                </pre>
-          </div>
-          <!--row for button-->
-          <div class="col-md-12">
-            <button id="question1" class="btn btn-default" type="button">Run Code</button>
-          </div>
-          <!--row for answer-->
-          <div class="col-md-12">
-            <div id="answer1"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab pane 2-->
-      <div role="tabpanel" class="tab-pane" id="q2">
-        <div class="row">
-          <!--row for pre-->
-          <div class="col-md-12">
-            <pre>
-    //question 2 function
-    function doQuestion2(){
-        var numerals="";
-    //for loop that starts at 1 and ends when greater than 100.
-        for(var number=1; number<=100; number++){
-            if(number % 3 === 0 || number % 5 === 0){
-        for(var numberInList=number; numberInList<=number; numberInList++){
-            if(numberInList % 3 === 0 && numberInList % 5 !== 0){
-            numberInList="Foo";
-            numerals+=numberInList;
-            numerals+="<br>";
+              <!-- Tab pane 6 -->
+            <div role="tabpanel" class="tab-pane" id="q6">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question6" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab pane 7 -->
+            <div role="tabpanel" class="tab-pane" id="q7">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question7" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab pane 8 -->
+            <div role="tabpanel" class="tab-pane" id="q8">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question8" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab pane 9 -->
+            <div role="tabpanel" class="tab-pane" id="q9">
+                <div class="row">
+                    <!--row for pre-->
+                    <div class="col-md-12">
+                    <pre>
+                    </pre>
+                    </div>
+                    <!--row for button-->
+                    <div class="col-md-12">
+                        <button id="question9" class="btn btn-default" type="button">Run Code</button>
+                    </div>
+                    <!--row for answer-->
+                    <div class="col-md-12">
+                        <div id="answer9"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!--div for tab panes-->
+    </div><!--div for container-->
+
+    <script>
+        $(document).ready(function () {
+
+            //question 1 function
+            function doQuestion1() {
+                var str = "";
+                for (var i = 1; i <= 6; i++) {
+                    for (var j = 1; j <= i; j++) {
+                        str = str + "#"
+                    };
+                    str = str + "<br>"
+                };
+                $('#answer1').html(str);
+            };
+            //question 2 function
+            function doQuestion2() {
+                var numerals = "";
+                //for loop that starts at 1 and ends when greater than 100.
+                for (var number = 1; number <= 100; number++) {
+                    if (number % 3 === 0 || number % 5 === 0) {
+                        for (var numberInList = number; numberInList <= number; numberInList++) {
+                            if (numberInList % 3 === 0 && numberInList % 5 !== 0) {
+                                numberInList = "Foo";
+                                numerals += numberInList;
+                                numerals += "<br>";
+                            } else if (numberInList % 5 === 0 && numberInList % 3 !== 0) {
+                                numberInList = "Bar";
+                                numerals += numberInList;
+                                numerals += "<br>";
+                            } else if (numberInList % 5 === 0 || numberInList % 3 === 0) {
+                                numberInList = "Foobar";
+                                numerals += numberInList;
+                                numerals += "<br>";
+                            }
+                        }
+                    } else {
+                        numerals += number;
+                        numerals += "<br>";
+                    }
+                    $('#answer2').html(numerals);
+                }
+            };
+
+            //question 3 function
+            function doQuestion3() {
+                var grid = "";
+                var newLine = 1;
+                var ask = Number(prompt("Enter a number for the side length for your grid"));
+                var secondCondition = true;
+                /*this loop tracks the loop number for the entire program.
+                Makes the loop continue the number of times
+                the person put into the prompt*/
+                for (var thirdCondition = 1; thirdCondition <= ask; thirdCondition++) {
+                    /*this while loop stops when newLine is no longer less than ask variable's value.
+                    Goes up by a rate of 1 each time. It determines the amount of breaks after each row*/
+                    while (newLine <= ask) {
+                        newLine++;
+                        //changed the increment to 2 in this for loop because the spaces are part of the grid
+                        for (var loopCondition = 1; loopCondition <= ask; loopCondition += 2) {
+                            //this do while loop inserts the "# " into each row. It stops when the loopCondition isnt true anymore
+                            do {
+                                grid += "# ";
+                            } while (secondCondition = false);
+                        }
+                        grid += "<br>";
+                    }
+                }
+
+                $("#answer3").html(grid);
+            };
+
+            //question 4 function
+            function countBs(word) {
+                //empty string that will hold the answers
+                var emptyString = "";
+                /*for loop that starts at zero or the first letter in the
+                string and stops when it is longer than the word*/
+                for (var count = 0; count <= word.length; count++) {
+                    var answer2 = word.charAt(count);
+                    /*if statement that will skip to next letter in loop if it isnt equal to B
+                    or will add it to the empty variable q if it is*/
+                    if (answer2 !== "B") {
+                        continue;
+                    } else {
+                        /*This will write the length of the empty variable
+                        emptyString out to the target element #answer4*/
+                        emptyString += answer2;
+                        $("#answer4").html("The number of B's in this word: " + emptyString.length);
+                    }
+                }
+            };
+
+            //question 5 function
+            //created a function that has two parameters
+            function countChar(word, letter) {
+                //an empty string that will take the letter of answer2
+                var emptyString = "";
+                /*for statement that starts at 0 and stops when it is longer than the word's length*/
+                for (var count = 0; count <=word.length; count++) {
+                    /*the letter that the iterator count is on will be put into the answer2 if
+                    its equal to the letter they put in as an argument. If it is not, it will skip
+                    and test the next letter in the word*/
+                    var answer2 = word.charAt(count);
+                    if (answer2 !== letter) {
+                        continue;
+                    } else {
+                        emptyString += answer2;
+                        $("#answer5").html("The number of " + letter + "'s in this word: " + emptyString.length);
+                    }
+                }
+            };
+
+        //question 6 function
+            function range(start, end){
+
+            var arr=[];
+            if(start<=end){
+
+                for(start; start<=end; start++){
+                arr.push(start);
+                }
             }
-            else if(numberInList % 5 === 0 && numberInList % 3 !== 0){
-            numberInList="Bar";
-            numerals+=numberInList;
-            numerals+="<br>";
-            }
-            else if(numberInList % 5 === 0 || numberInList % 3 === 0){
-            numberInList="Foobar";
-            numerals+=numberInList;
-            numerals+="<br>";
-            }
-        }
-    }
-        else{
-            numerals+=number;
-            numerals+="<br>";
-            }
-            $('#answer2').html(numerals);
-        }
-    };
-
-        $('#question2').on("click", function(){
-        doQuestion2();
-    });
-            </pre>
-          </div>
-          <!--row for button-->
-          <div class="col-md-12">
-            <button id="question2" class="btn btn-default" type="button">Run Code</button>
-          </div>
-          <!--row for answer-->
-          <div class="col-md-12">
-            <div id="answer2"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab pane 3-->
-      <div role="tabpanel" class="tab-pane" id="q3">
-        <div class="row">
-          <!--row for pre-->
-          <div class="col-md-12">
-            <pre>
-    //question 3 function
-    function doQuestion3(){
-        var grid="";
-        var newLine=1;
-        var ask=Number(prompt("Enter a number for the side length for your grid"));
-        var secondCondition=true;
-    //this loop tracks the loop number for the entire program. Makes the loop continue the number of times the person put into the prompt//
-    for(var thirdCondition=1; thirdCondition<=ask; thirdCondition++){
-    //this while loop stops when newLine is no longer less than ask variable's value. Goes up by a rate of 1 each time. It determines the amount of breaks after each row//
-        while(newLine<=ask){
-        newLine++;
-        //changed the increment to 2 in this for loop because the spaces are part of the grid//
-        for(var loopCondition=1; loopCondition<=ask; loopCondition+=2){
-//this do while loop inserts the "# " into each row. It stops when the loopCondition isnt true anymore//
-             do{
-                grid+="# ";
-             }while(secondCondition=false);
-        }
-        grid+="<br>";
-        }
-    }
-
-        $("#answer3").html(grid);
-    };
-
-          $('#question3').on("click", function(){
-        doQuestion3();
-    });
-            </pre>
-          </div>
-          <!--row for button-->
-          <div class="col-md-12">
-            <button id="question3" class="btn btn-default" type="button">Run Code</button>
-          </div>
-          <!--row for answer-->
-          <div class="col-md-12">
-            <div id="answer3"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab pane 4 -->
-      <div role="tabpanel" class="tab-pane" id="q4">
-        <div class="row">
-          <!--row for pre-->
-          <div class="col-md-12">
-            <pre>
-    //question 4 function
-    function countBs(word){
-    //empty string that will hold the answers
-    var emptyString="";
-    //for loop that starts at zero or the first letter in the string and stops when it is longer than the word//
-    for(var count=0; count<=word.length; count++){
-      var answer2=word.charAt(count);
-    //if statement that will skip to next letter in loop if it isnt equal to B or will add it to the empty variable q if it is//
-      if(answer2!=="B"){
-      continue;
-      }
-        else{
-    //This will write the length of the empty variable emptyString out to the target element #answer4//
-        emptyString+=answer2;
-        $("#answer4").html("The number of B's in this word: "+ emptyString.length);
-        }
-    }
-    };
-
-            $('#question4').on("click", function(){
-        countBs("BBC");
-    });
-                </pre>
-          </div>
-          <!--row for button-->
-          <div class="col-md-12">
-            <button id="question4" class="btn btn-default" type="button">Run Code</button>
-          </div>
-          <!--row for answer-->
-          <div class="col-md-12">
-            <div id="answer4"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Tab pane 5 -->
-      <div role="tabpanel" class="tab-pane" id="q5">
-        <div class="row">
-          <!--row for pre-->
-          <div class="col-md-12">
-            <pre>
-    //question 5 function
-    created a function that has two parameters//
-    function countChar(word, letter){
-    //an empty string that will take the letter of answer2
-    var emptyString="";
-    //for statement that starts at 0 and stops when it is longer than the word's length//
-    for(var count=0; count<=word.length; count++){
-    //the letter that the iterator count is on will be put into the answer2 if its equal to the letter they put in as an argument. If it isn't, it'll skip and test the next letter in the word//
-      var answer2=word.charAt(count);
-      if(answer2!==letter){
-      continue;
-      }
-        else{
-        emptyString+=answer2;
-        $("#answer5").html("The number of "+ letter + "'s in this word: "+emptyString.length);
-        }
-    }
-    };
-
-           $('#question5').on("click", function(){
-        countChar("kakkerlak", "k");
-    });
-
-        </pre>
-          </div>
-          <!--row for button-->
-          <div class="col-md-12">
-            <button id="question5" class="btn btn-default" type="button">Run Code</button>
-          </div>
-          <!--row for answer-->
-          <div class="col-md-12">
-            <div id="answer5"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    $(document).ready(function() {
-
-      //question 1 function
-      function doQuestion1() {
-        var str = "";
-        for (var i = 1; i <= 6; i++) {
-          for (var j = 1; j <= i; j++) {
-            str = str + "#"
-          };
-          str = str + "<br>"
+                return arr; /*returning contents arr to the rangeAnswer function call */
         };
-        $('#answer1').html(str);
-      };
-      //question 2 function
-      function doQuestion2() {
-        var numerals = "";
-        //for loop that starts at 1 and ends when greater than 100.
-        for (var number = 1; number <= 100; number++) {
-          if (number % 3 === 0 || number % 5 === 0) {
-            for (var numberInList = number; numberInList <= number; numberInList++) {
-              if (numberInList % 3 === 0 && numberInList % 5 !== 0) {
-                numberInList = "Foo";
-                numerals += numberInList;
-                numerals += "<br>";
-              } else if (numberInList % 5 === 0 && numberInList % 3 !== 0) {
-                numberInList = "Bar";
-                numerals += numberInList;
-                numerals += "<br>";
-              } else if (numberInList % 5 === 0 || numberInList % 3 === 0) {
-                numberInList = "Foobar";
-                numerals += numberInList;
-                numerals += "<br>";
-              }
+
+        //question 7 function
+    //function called sum has two parameters to define range
+            function sum(start, end){
+    //this array will hold the range of numbers
+            var emptyArray=[];
+    //this variable will hold sum of the range
+            var total= 0;
+            if(start<=end){
+        //for loop for determining range
+                for(start; start<=end; start++){
+                emptyArray.push(start);
+                }
             }
-          } else {
-            numerals += number;
-            numerals += "<br>";
-          }
-          $('#answer2').html(numerals);
-        }
-      };
+        /*for loop for determining sum of range. Made i< not i<= because first character in array
+         is 0 but the length of array starts at 1*/
+                for(var figure=0; figure<emptyArray.length; figure++){
+                total+=emptyArray[figure];
+                }
+                return total;
+            };
 
-      //question 3 function
-      function doQuestion3() {
-        var grid = "";
-        var newLine = 1;
-        var ask = Number(prompt("Enter a number for the side length for your grid"));
-        var secondCondition = true;
-        //this loop tracks the loop number for the entire program. Makes the loop continue the number of times the person put into the prompt//
-        for (var thirdCondition = 1; thirdCondition <= ask; thirdCondition++) {
-          //this while loop stops when newLine is no longer less than ask variable's value. Goes up by a rate of 1 each time. It determines the amount of breaks after each row//
-          while (newLine <= ask) {
-            newLine++;
-            //changed the increment to 2 in this for loop because the spaces are part of the grid//
-            for (var loopCondition = 1; loopCondition <= ask; loopCondition += 2) {
-              //this do while loop inserts the "# " into each row. It stops when the loopCondition isnt true anymore//
-              do {
-                grid += "# ";
-              } while (secondCondition = false);
-            }
-            grid += "<br>";
-          }
-        }
+        //question 8
+        function reverseArray(array){
+        //empty array where letters go in reverse order
+        var newArray=[];
+        //loop that starts at last letter & ends at first
+        for(var reverse=[array.length-1]; reverse>=0; reverse--){
+        //pushes argument array to newArray
+        newArray.push(array[reverse]);
+        };
+        //returns newArray to reversedArray
+        return newArray;
+        };
 
-        $("#answer3").html(grid);
-      };
-
-      //question 4 function
-      function countBs(word) {
-        //empty string that will hold the answers
-        var emptyString = "";
-        //for loop that starts at zero or the first letter in the string and stops when it is longer than the word//
-        for (var count = 0; count <= word.length; count++) {
-          var answer2 = word.charAt(count);
-          //if statement that will skip to next letter in loop if it isnt equal to B or will add it to the empty variable q if it is//
-          if (answer2 !== "B") {
-            continue;
-          } else {
-            //This will write the length of the empty variable emptyString out to the target element #answer4//
-            emptyString += answer2;
-            $("#answer4").html("The number of B's in this word: " + emptyString.length);
-          }
-        }
-      };
-
-      //question 5 function
-      //created a function that has two parameters
-      function countChar(word, letter) {
-        //an empty string that will take the letter of answer2
-        var emptyString = "";
-        //for statement that starts at 0 and stops when it is longer than the word's length//
-        for (var count = 0; count <= word.length; count++) {
-          //the letter that the iterator count is on will be put into the answer2 if its equal to the letter they put in as an argument. If it is not, it will skip and test the next letter in the word//
-          var answer2 = word.charAt(count);
-          if (answer2 !== letter) {
-            continue;
-          } else {
-            emptyString += answer2;
-            $("#answer5").html("The number of " + letter + "'s in this word: " + emptyString.length);
-          }
-        }
-      };
+        //question 9
+        function reverseArrayInPlace(array){
+        var variable1=0;
+        var variable2=1;
+    /*tried to make variable1 start at the beginning and variable2 start from the end of the array
+    and end once they reached the 3 in the array*/
+        do{
+        /*The 4 and 2 switch. Only when I remove these variables will the 1&5 switch places.
+        Don't know how to make this work*/
+        variable1++;
+        variable2++;
+        var swap=array[variable1];
+        array[variable1]=array[array.length-variable2];
+        array[array.length-variable2]=swap;
+        }while(variable1<2&&variable2>2);
+        return array;
+        };
 
 
-      //makes buttons interactive
-      $('#question1').on("click", function() {
-        doQuestion1();
-      });
-      $('#question2').on("click", function() {
-        doQuestion2();
-      });
-      $('#question3').on("click", function() {
-        doQuestion3();
-      });
-      $('#question4').on("click", function() {
-        countBs("BBC");
-      });
-      $('#question5').on("click", function() {
-        countChar("kakkerlak", "k");
-      });
-    });
-  </script>
+
+
+
+            //makes buttons interactive
+            $('#question1').on("click", function () {
+                doQuestion1();
+            });
+            $('#question2').on("click", function () {
+                doQuestion2();
+            });
+            $('#question3').on("click", function () {
+                doQuestion3();
+            });
+            $('#question4').on("click", function () {
+                countBs("BBC");
+            });
+            $('#question5').on("click", function () {
+                countChar("kakkerlak", "k");
+            });
+            $('#question6').on("click", function () {
+                var rangeAnswer=range(2,12);
+                $("#answer6").html("Your Range looks like: " + rangeAnswer.join());//displayed the array
+            });
+            $('#question7').on("click", function () {
+                var rangeSum=sum(3,7);//
+                $("#answer7").html("The sum of your range: " + rangeSum);
+            });
+            $('#question8').on("click", function () {
+                var reversedArray=reverseArray(["A", "B", "C", "D"])
+                $("#answer8").html("The reverse order of your array is: " + reversedArray);
+            });
+            $('#question9').on("click", function () {
+               var answer=reverseArrayInPlace([1, 2, 3, 4, 5])
+
+               $("#answer9").html(answer);
+            });
+        });
+    </script>
 </body>
 
 </html>
