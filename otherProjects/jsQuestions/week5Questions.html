@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Week 5 Questions</title>
+    <title>Week 5/6 Questions</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -45,6 +45,10 @@
                           };
                           $('#answer1').html(str);
                       };
+
+                      $('#question1').on("click", function () {
+                          doQuestion1();
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -91,6 +95,10 @@
                               $('#answer2').html(numerals);
                           }
                       };
+
+                      $('#question2').on("click", function () {
+                          doQuestion2();
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -136,6 +144,10 @@
 
                           $("#answer3").html(grid);
                       };
+
+                      $('#question3').on("click", function () {
+                          doQuestion3();
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -174,6 +186,10 @@
                               }
                           }
                       };
+
+                      $('#question4').on("click", function () {
+                          countBs("BBC");
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -211,6 +227,10 @@
                               }
                           }
                       };
+
+                      $('#question5').on("click", function () {
+                          countChar("kakkerlak", "k");
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -242,6 +262,11 @@
                           }
                               return arr; /*returning contents arr to the rangeAnswer function call */
                       };
+
+                      $('#question6').on("click", function () {
+                          var rangeAnswer = range(2, 12);
+                          $("#answer6").html("Your Range looks like: " + rangeAnswer.join()); //displayed the array
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -281,6 +306,11 @@
                               }
                               return total;
                           };
+
+                          $('#question7').on("click", function () {
+                              var rangeSum = sum(3, 7); //
+                              $("#answer7").html("The sum of your range: " + rangeSum);
+                          });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -312,6 +342,11 @@
                       //returns newArray to reversedArray
                       return newArray;
                       };
+
+                      $('#question8').on("click", function () {
+                          var reversedArray = reverseArray(["A", "B", "C", "D"])
+                          $("#answer8").html("The reverse order of your array is: " + reversedArray);
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
@@ -336,9 +371,10 @@
                       var variable1=0;
                       var variable2=1;
                   /*tried to make variable1 start at the beginning and variable2 start from the end of the array
-                  and end once they reached the 3 in the array*/
+                  and end once they reached the 3 in the array. This way user can put in any length array they want*/
                       do{
-                      /*The 4 and 2 switch. Only when I remove these variables will the 1 and 5 switch places.
+                      /*The 4 and 2 switch. Only when I remove variable1++
+                      and variable2++ Only will the 1 and 5 switch places.
                       Don't know how to make this work*/
                       variable1++;
                       variable2++;
@@ -348,6 +384,12 @@
                       }while(variable1<2&&variable2>2);
                       return array;
                       };
+
+                      $('#question9').on("click", function () {
+                          var answer = reverseArrayInPlace([1, 2, 3, 4, 5])
+
+                          $("#answer9").html(answer);
+                      });
                     </pre>
                     </div>
                     <!--row for button-->
