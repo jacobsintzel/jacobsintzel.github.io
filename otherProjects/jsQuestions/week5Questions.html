@@ -366,24 +366,24 @@
                     <!--row for pre-->
                     <div class="col-md-12">
                         <pre>
-                      //question 9
-                      function reverseArrayInPlace(array){
-                      var variable1=0;
-                      var variable2=1;
-                  /*tried to make variable1 start at the beginning and variable2 start from the end of the array
-                  and end once they reached the 3 in the array. This way user can put in any length array they want*/
-                      do{
-                      /*The 4 and 2 switch. Only when I remove variable1++
-                      and variable2++ Only will the 1 and 5 switch places.
-                      Don't know how to make this work*/
-                      variable1++;
-                      variable2++;
-                      var swap=array[variable1];
-                      array[variable1]=array[array.length-variable2];
-                      array[array.length-variable2]=swap;
-                      }while(variable1<2&&variable2>2);
-                      return array;
-                      };
+                          //question 9
+                          function reverseArrayInPlace(array) {
+                              var variable1 = 0;
+                              var variable2 = 1;
+                              /*tried to make variable1 start at the beginning and variable2 start from the end of the array
+                              and end once they reached the 3 in the array*/
+                              do {
+                                  /*The 4 and 2 switch. Only when I remove these variables will the 1&5 switch places.
+                                  Don't know how to make this work*/
+                                  variable1++;
+                                  variable2++;
+                                  var swap = array[variable1];
+                                  array[variable1] = array[array.length - variable2];
+                                  array[array.length - variable2] = swap;
+                                  //I wanted the loop to stop when it reaches the middle of the array
+                              } while (variable1 < 0.5*array.length && variable2 > 0.5*array.length);
+                              return array;
+                          };
 
                       $('#question9').on("click", function () {
                           var answer = reverseArrayInPlace([1, 2, 3, 4, 5])
@@ -580,7 +580,8 @@
                     var swap = array[variable1];
                     array[variable1] = array[array.length - variable2];
                     array[array.length - variable2] = swap;
-                } while (variable1 < 2 && variable2 > 2);
+                    //I wanted the loop to stop when it reaches the middle of the array
+                } while (variable1 < 0.5*array.length && variable2 > 0.5*array.length);
                 return array;
             };
 
