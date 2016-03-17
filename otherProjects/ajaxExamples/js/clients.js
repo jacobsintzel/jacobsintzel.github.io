@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#getClients").on("click", function() {
 
-    var link = "http://jacobsintzel.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json";
+    var link="http://jacobsintzel.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json";
 
     $.getJSON(link, function(data) {
       var table = "<table class='table table-hover table-striped'>" +
