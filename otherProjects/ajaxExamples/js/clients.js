@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$("#getClients").("click", function(){
+$("#getClients").on("click", function(){
 
 alert("working");
 
