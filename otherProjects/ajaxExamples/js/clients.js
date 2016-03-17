@@ -14,7 +14,7 @@ $(document).ready(function() {
         "</tr>";
         }); //each
         table += "</table>"
-        $("#data").append(item.name)//appends data to div
+        $("#data").append(table);//appends data to div
     }); //getJSON
   }); //click event
 }); //document ready
