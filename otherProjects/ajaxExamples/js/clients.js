@@ -1,1 +1,5 @@
-alert(“working”);
+$("#getClients").("click", function(){
+
+alert("working");
+
+});
