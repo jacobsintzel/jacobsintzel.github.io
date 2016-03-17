@@ -4,7 +4,7 @@ $.get("http://jacobsintzel.github.io/partials/footer.html", function(data) {
 	//check if this document has .container
 	var container = $(".container");
 	//if so add footer.html contents to the bottom
-	if (footer) {
+	if (container) {
   	container.append(data)
   	container.fadeIn(600);
 	}
