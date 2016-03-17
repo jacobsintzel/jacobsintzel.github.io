@@ -8,7 +8,7 @@ $(document).ready(function() {
         "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
         .each(data, function(index, item) {
         table +="<tr>" +
-        "<td>" + item.name +"</td>"
+        "<td>" + item.name +"</td>" +
         "<td>" + item.email + "</td>" +
         "<td>" + item.company + "</td>" +
         "</tr>";
