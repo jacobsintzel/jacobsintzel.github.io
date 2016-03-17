@@ -5,8 +5,8 @@ $.get("http://jacobsintzel.github.io/partials/footer.html", function(data) {
 	var footer = $(".footer");
 	//if so add footer.html contents to the bottom
 	if (footer) {
-  	footer.append(data)
-  	footer.fadeIn(600);
+  	container.append(data)
+  	container.fadeIn(600);
 	}
   });
 });
