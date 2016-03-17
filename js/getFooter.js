@@ -1,4 +1,4 @@
-$.get("http://jacobsintzel.github.io/partials/footer.html", function(data) {
+/*$.get("http://jacobsintzel.github.io/partials/footer.html", function(data) {
 
   $(document).ready(function() {
 	//check if this document has .container
@@ -9,4 +9,4 @@ $.get("http://jacobsintzel.github.io/partials/footer.html", function(data) {
   	container.fadeIn(600);
 	}
   });
-});
+});*/
