@@ -15,6 +15,6 @@ $(document).ready(function() {
         }); //each
         table += "</table>"
         $("#data").append(table);//appends data to div
-    }); //getJSON
-  }); //click event
+    }) //getJSON
+  }) //click event
 }); //document ready
