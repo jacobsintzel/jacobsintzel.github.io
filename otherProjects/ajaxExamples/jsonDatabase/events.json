@@ -1,5 +1,4 @@
-{
-  "events":[
+[
     {
       "location": "Toronto, ON",
       "date": "March 19, 2016",
@@ -15,5 +14,4 @@
       "date": "April 1, 2016",
       "time": "16:55"
     }
-  ]
-}
+]
