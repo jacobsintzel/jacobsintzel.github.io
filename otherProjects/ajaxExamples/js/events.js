@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     $.getJSON(link, function(data) {
       var table = "<table class='table table-hover table-striped'>" +
-        "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
+        "<tr><th>Location</th><th>Date</th><th>Time/th></tr>";
         $.each(data, function(index, item) {
         table +="<tr>" +
         "<td>" + item.location +"</td>" +
