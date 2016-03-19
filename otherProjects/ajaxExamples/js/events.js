@@ -6,11 +6,11 @@ $(document).ready(function() {
     $.getJSON(link, function(data) {
       var table = "<table class='table table-hover table-striped'>" +
         "<tr><th>Location</th><th>Date</th><th>Time</th></tr>";
-        $.each(data, function(index, item) {
+        $.each(data, function(index, value) {
         table +="<tr>" +
-        "<td>" + item.location +"</td>" +
-        "<td>" + item.date + "</td>" +
-        "<td>" + item.time + "</td>" +
+        "<td>" + value.location +"</td>" +
+        "<td>" + value.date + "</td>" +
+        "<td>" + value.time + "</td>" +
         "</tr>";
         }); //each
         table += "</table>"
