@@ -8,7 +8,7 @@ $(document).ready(function() {
         "<tr><th>Location</th><th>Date</th><th>Time</th></tr>";
         $.each(data, function(index, item) {
         table +="<tr>" +
-        "<td>" + item.location +"</td>" +
+        "<td>" + events.location +"</td>" +
         "<td>" + item.date + "</td>" +
         "<td>" + item.time + "</td>" +
         "</tr>";
