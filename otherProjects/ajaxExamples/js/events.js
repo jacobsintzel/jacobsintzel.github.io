@@ -8,9 +8,9 @@ $(document).ready(function() {
         "<tr><th>Location</th><th>Date</th><th>Time</th></tr>";
         $.each(data, function(index, value) {
         table +="<tr>" +
-        "<td>" + value.events.location +"</td>" +
-        "<td>" + value.events.date + "</td>" +
-        "<td>" + value.events.time + "</td>" +
+        "<td>" + this.location +"</td>" +
+        "<td>" + this.date + "</td>" +
+        "<td>" + this.time + "</td>" +
         "</tr>";
         }); //each
         table += "</table>"
