@@ -1,0 +1,109 @@
+[{
+  "brand": "Apple",
+  "model": "iPhone 6S Plus",
+  "storage": "64GB",
+  "image": "images/iphone6Splus.jpg",       
+  "comments": [{
+    "username": "MotoDonald",  
+    "rating": 2,
+    "comment": "Overrated..."
+  }, {
+    "username": "IonA1",
+    "rating": 4,
+    "comment": "iPhone 4 lyfe"
+  }, {
+    "username": "Borerac",
+    "rating": 2,
+    "comment": "battery life sucks"
+  }]
+}, {
+  "brand": "Samsung",
+  "model": "Samsung Galaxy S7 Edge",
+  "storage": "32GB",
+  "image": "images/galaxyedge.jpg",
+  "comments": [{
+    "username": "Gobaloos",
+    "rating": 4,
+    "comment": "Samsung>Apple"
+  }, {
+    "username": "Domaspri",
+    "rating": 5,
+    "comment": "Android all dayyyy"
+  }, {
+    "username": "IssPod",
+    "rating": 5,
+    "comment": "Good job Samsung!"
+  }]
+}, {
+  "brand": "Sony",
+  "model": "Sony Xperia Z5",
+  "storage": "32GB",
+  "image": "images/sonyxperia.jpg",
+  "comments": [{
+    "username": "Darotech",
+    "rating": 2,
+    "comment": "It burst into flames..."
+  }, {
+    "username": "Buzzhe",
+    "rating": 2,
+    "comment": "Never again"
+  }, {
+    "username": "Madwood",
+    "rating": 5,
+    "comment": "Revolutionary phone!"
+  }]
+}, {
+  "brand": "LG",
+  "model": "LG G4",
+  "storage": "32GB",
+  "image": "images/lgg4.jpg",
+  "comments": [{
+    "username": "CheeseAra",
+    "rating": 3,
+    "comment": "camera is horrible"
+  }, {
+    "username": "ScanMon",
+    "rating": 2,
+    "comment": "returning the phone now"
+  }, {
+    "username": "CrossedStah",
+    "rating": 5,
+    "comment": "Underrated phone"
+  }]
+},{
+  "brand": "Google",
+  "model": "Google Nexus 6P",
+  "storage": "32GB",
+  "image": "images/gnexus.jpg",
+  "comments": [{
+    "username": "Aimakrilo",
+    "rating": 1,
+    "comment": "Not worth the money"
+  }, {
+    "username": "Hemptomarc",
+    "rating": 1,
+    "comment": "I hate this phone!"
+  }, {
+    "username": "CookySter",
+    "rating": 5,
+    "comment": "I love this phone!"
+  }]
+},{
+  "brand": "Samsung",
+  "model": "Samsung Galaxy Note 5",
+  "storage": "64GB",
+  "image": "images/samsungnote5.jpg",
+  "comments": [{
+    "username": "BozGame",
+    "rating": 4,
+    "comment": "Amazing phone!"
+  }, {
+    "username": "Gruffboa",
+    "rating": 2,
+    "comment": "Meh"
+  }, {
+    "username": "Funnybooker",
+    "rating": 5,
+    "comment": "Worth the wait"
+  }]
+}]
