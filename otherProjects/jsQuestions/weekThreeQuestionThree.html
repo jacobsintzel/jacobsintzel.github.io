@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Week 3 JS: Question Three</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //the empty array answer was holding the final answers of each loop
+        var answer = [];
+        /*created a function that included parameters that represented the times table you wanted to see,
+        where the times table should begin and end*/
+        function displayTimesTables(timesTable, begin, end) {
+            /*used a for loop that would start with the number entered for begin in the function call's argument.
+            This would stop when it was greater than the number entered for end. The loop would increase by 1 each time.*/
+            for (var loop = begin; loop <= end; loop++) {
+                /*the calculate variable would hold the products of the loop number and the initial times table number.
+                These answers will be pushed to the calculate array*/
+                var calculate = loop * timesTable;
+                answer.push(calculate);
+            }
+        };
+        /*this is where I called the function. I had trouble displaying the multiplication, and
+        could only manage to get the results written into the document*/
+        var functionCall = displayTimesTables(2, 5, 10);
+        document.write('Answers for specified times tables: </br>' + answer);
+    </script>
+
+    <pre>
+      //the empty array answer was holding the final answers of each loop
+      var answer = [];
+      /*created a function that included parameters that represented the times table you wanted to see,
+      where the times table should begin and end*/
+      function displayTimesTables(timesTable, begin, end) {
+          /*used a for loop that would start with the number entered for begin in the function call's argument.
+          This would stop when it was greater than the number entered for end. The loop would increase by 1 each time.*/
+          for (var loop = begin; loop <= end; loop++) {
+              /*the calculate variable would hold the products of the loop number and the initial times table number.
+              These answers will be pushed to the calculate array*/
+              var calculate = loop * timesTable;
+              answer.push(calculate);
+          }
+      };
+      /*this is where I called the function. I had trouble displaying the multiplication, and
+      could only manage to get the results written into the document*/
+      var functionCall = displayTimesTables(2, 5, 10);
+      document.write('Answers for specified times tables: </br>' + answer);
+    </pre>
+
+</body>
+
+</html>
