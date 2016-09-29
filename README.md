@@ -1,1 +1,0 @@
-# jacobsintzel.github.io
