@@ -35,7 +35,7 @@ $(document).ready(function() {
                     'text-decoration':'underline'
                 });//change navText display
                 var retrieveAttr=this.id.toUpperCase();//retrieve lower case id on .different & make uppercase
-                var thisImage="url('../images/"+retrieveAttr+".jpg')"//variable for displaying specific image
+                var thisImage="url('images/"+retrieveAttr+".jpg')"//variable for displaying specific image
                 $(this).css({'background-image': thisImage, 'background-repeat':'no-repeat', 'background-position':'center', 'background-size':'cover'})
                 }else{
                   $child.css({
@@ -45,7 +45,7 @@ $(document).ready(function() {
                     'text-decoration':'underline'
                     }); //change navText display
                     var retrieveAttr=this.id.toUpperCase();//retrieve lower case id on .different & make uppercase
-                    var thisImage="url('../images/"+retrieveAttr+".jpg')"//variable for displaying specific image
+                    var thisImage="url('images/"+retrieveAttr+".jpg')"//variable for displaying specific image
                     $(this).css({'background-image': thisImage, 'background-repeat':'no-repeat', 'background-position':'center', 'background-size':'cover'});
                 }
             }
