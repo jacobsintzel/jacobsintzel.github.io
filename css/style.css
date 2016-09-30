@@ -17,13 +17,14 @@
 .icon1-linkedin-square {
     font-size: 50px;
 }
+
 body {
     background-image: url(../images/gray_jean.png);
     height: 100vh;
     text-align: center;
 }
-/*content loaded in*/
 
+/*content loaded in*/
 #content {
     margin-top: 15px;
     font-family: 'Pavanam', sans-serif;
@@ -34,6 +35,7 @@ body {
     font-family: 'Kalam', cursive;
     font-size: 80px;
     text-align: center;
+    color: black;
 }
 /*Line styling*/
 
@@ -44,16 +46,16 @@ body {
     margin-top: 10px;
     border-width: 1px;
 }
-/*Hyperlink Styling*/
 
+/*Hyperlink Styling*/
 a:-webkit-any-link {
     color: -webkit-link;
     text-decoration: none;
     cursor: auto;
-    color: black;
+    color:black;
 }
-/*current page*/
 
+/*current page*/
 .current {
     color: rgba(8, 171, 247, 0.7);
     font-size: 40px;
@@ -73,8 +75,8 @@ a:-webkit-any-link {
     vertical-align: middle;
     text-align: center;
 }
-/*Main Page mobile navigation mobile*/
 
+/*Main Page mobile navigation mobile*/
 .different {
     width: 100px;
     height: 100px;
@@ -86,38 +88,37 @@ a:-webkit-any-link {
     margin: 10% auto;
     font-size: 16px;
 }
-/*cursor styling*/
 
+/*cursor styling*/
 .navText,
 .mobileNavText,
 .imgBorder:hover {
     cursor: -webkit-grab;
     cursor: grab;
 }
-/*mobile Navigation Index Icons*/
 
+/*mobile Navigation Index Icons*/
 .mobileNavIconsIndex {
     font-size: 25px;
     color: rgba(8, 171, 247, 0.6);
     margin-top: -10px;
     opacity: 0.5;
 }
-/*mobile Navigation Index Icons*/
 
+/*mobile Navigation Index Icons*/
 .mobileNavIconsIndexTwo {
     visibility: hidden;
 }
-/*Icon styling other pages*/
 
+/*Icon styling other pages*/
 .mobileNavIcons {
     font-size: 40px;
     color: rgba(8, 171, 247, 0.6);
     margin-top: 7px;
     opacity: 0.5;
-    z-index: 9;
 }
-/*Index navigation text*/
 
+/*Index navigation text*/
 .mobileNavTextOne {
     font-size: 20px;
     color: black;
@@ -126,13 +127,13 @@ a:-webkit-any-link {
     font-weight: bolder;
     display: block;
 }
+
 /*hide large screen nav text*/
-
 .bigScreenNavText {
-    display: none;
+    display:none;
 }
-/*navigation text for other pages*/
 
+/*navigation text for other pages*/
 .mobileNavText {
     font-size: 16px;
     color: black;
@@ -141,49 +142,50 @@ a:-webkit-any-link {
     opacity: 1.0;
     font-weight: bolder;
 }
-/*about me page description*/
 
+/*about me page description*/
 .aboutMeDescription {
     text-align: left;
     margin-top: 15px;
 }
-/*About Me h2*/
 
+/*About Me h2*/
 .aboutMeTitle {
     text-align: left;
     margin-left: -.5%;
     margin-top: 11%;
     font-weight: bolder;
 }
-/*Work Title h2*/
 
+/*Work Title h2*/
 .workTitle {
     text-align: left;
     margin-left: -.1%;
     margin-top: 5%;
     font-weight: bolder;
 }
-/*Container for Mobile Images of Articles*/
 
+/*Container for Mobile Images of Articles*/
 .mobileWork {
     margin-bottom: 5%;
 }
-/*Mobile Images of Articles*/
 
+/*Mobile Images of Articles*/
 .imgBorder {
     box-shadow: 0 0 10px;
 }
-/*contact page text*/
 
+/*contact page text*/
 .contactText {
     font-size: 20px;
     margin-top: -20px;
 }
-/*hide article description div*/
 
+/*hide article description div*/
 .articleInfo {
     display: none;
 }
+
 .aboutMeBackground {
     margin-top: 5%;
     text-align: center;
@@ -192,6 +194,7 @@ a:-webkit-any-link {
     margin-left: auto;
     margin-right: auto;
 }
+
 @media(min-width:550px) {
     .aboutMeBackground {
         margin-top: 2%;
@@ -199,14 +202,14 @@ a:-webkit-any-link {
         font-size: 18px;
     }
 }
-/*big screen navigation styling*/
 
+/*big screen navigation styling*/
 @media (min-width: 768px) {
     h2 {
         font-size: 35px;
     }
+
     /*main page navigation styling*/
-    
     .different {
         opacity: 1;
         width: 150px;
@@ -220,47 +223,47 @@ a:-webkit-any-link {
         font-size: 16px;
         display: inline-block;
     }
+
     /*center mobile navs*/
-    
     .navCenter {
         text-align: center;
         margin: 50px auto;
     }
+
     /*name at top*/
-    
     #name {
         margin-top: 10px;
     }
+
     /*Nav Text for Mobile*/
-    
     .mobileNavTextOne {
         display: none;
     }
+
     /*Nav Text for Big screen*/
-    
     .bigScreenNavText {
-        padding-top: 15px;
+        padding-top: 30px;
     }
+
     /*big screen Navigation Index Icons*/
-    
     .mobileNavIconsIndex {
         color: rgba(8, 171, 247, 0.6);
         opacity: 0.5;
         visibility: visible;
         font-size: 100px;
     }
+
     /*work pg content*/
-    
     #workInfo {
         margin-top: -30px
     }
+
     /*hides article info overflow for animation*/
-    
     .mobileWork {
         overflow: hidden;
     }
+
     /*styling for hover article info*/
-    
     .articleInfo {
         position: absolute;
         bottom: 0px;
@@ -270,32 +273,58 @@ a:-webkit-any-link {
         background: rgba( 0, 0, 0, 0.85);
         display: none;
     }
+
     /*text for article description*/
-    
     .articleTextPreview {
         color: white;
         padding: 20px;
         font-size: 15px;
     }
+
     /*contact page icons*/
-    
     .contactIcons {
         font-size: 80px;
     }
+
     /*contact page text*/
-    
     .contactText {
         font-size: 25px;
         margin-top: -20px;
     }
+
     .aboutMeBackground {
         width: 80%;
         font-size: 18px;
     }
 }
+
+@media (min-width: 896px){
+      .different {
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+        background-color: #0574A8;
+        border-radius: 50%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 16px;
+        margin: 5%;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    /*big screen Navigation Index Icons*/
+    .mobileNavIconsIndex {
+        color: rgba(8, 171, 247, 0.6);
+        opacity: 0.5;
+        visibility: visible;
+        font-size: 150px;
+    }
+}
+
 @media (min-width: 992px) {
     /*styling for hover article info col-md*/
-    
+
     .articleInfo {
         position: absolute;
         bottom: 0px;
@@ -311,23 +340,23 @@ a:-webkit-any-link {
     }
 }
 @media (min-width: 1200px) {
+
     /*work page main content*/
-    
     #workInfo {
         margin-top: -10px;
     }
+
     /*work page images*/
-    
     .img-responsive {
         max-width: 95%;
     }
+
     /*changing font size*/
-    
     .articleTextPreview {
         font-size: 18px;
     }
+
     /*styling for hover article info*/
-    
     .articleInfo {
         position: absolute;
         bottom: 0px;
@@ -341,7 +370,3 @@ a:-webkit-any-link {
         width: 55%;
     }
 }
-
-
-
-
