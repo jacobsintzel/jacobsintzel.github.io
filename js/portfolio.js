@@ -8,11 +8,11 @@ $(document).ready(function() {
     $('.mobileNav').hide().fadeIn(800);
 
     //click buttons
-    $('a:not(".externalLink")').on('dblclick', function(e) {
+    $('a:not(".externalLink")').on('click dblclick', function(e) {
         e.preventDefault();
         var url = this.href;
-        $('#container').empty();
-        $('#content').load(url).hide().fadeIn(800);;
+        $('#container').remove();
+        $('#content').load(url +'#container').hide().fadeIn(800);
     });
 
     //change the navigation for bigger screens
