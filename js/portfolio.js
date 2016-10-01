@@ -92,14 +92,4 @@ $(document).ready(function() {
             $(this).next().hide();
         })
     }
-
-    /*hover main page nav
-    $(window).on('load resize DOMNodeInserted DOMContentLoaded', function() {
-        var windowWidth = $(window).width();
-        if (windowWidth > 767) {
-            reSize();
-        }
-    })*/
-
-
 });
