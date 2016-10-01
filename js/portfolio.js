@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.mobileNav').hide().fadeIn(800);
 
     //click buttons
-    $('a:not(".externalLink")').on('dblclick', function(e) {
+    $('a:not(".externalLink")').on('click', function(e) {
         e.preventDefault();
         var url = this.href;
         $('#container').remove();
