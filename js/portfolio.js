@@ -12,7 +12,7 @@ $(document).ready(function() {
         e.preventDefault();
         var url = this.href;
         $('#container').remove();
-        $('#content').load(url +'#container').hide().fadeIn(800);
+        $('#content').load(url +'#container').delay(500).hide().fadeIn(800);
     });
 
     //change the navigation for bigger screens
